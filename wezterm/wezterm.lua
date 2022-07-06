@@ -23,6 +23,12 @@ local fonts = {
 		harfbuzz_features = { "zero" },
 	},
 	{
+		family = "Cascadia Code PL",
+		weight = "Medium",
+		stretch = "Normal",
+		harfbuzz_features = { "zero", "ss01", "ss02", "ss03", "ss04", "ss05", "ss06", "ss07", "ss20", "cv05" },
+	},
+	{
 		family = "Fira Code",
 		weight = "Medium",
 		stretch = "Normal",
@@ -41,14 +47,7 @@ local fonts = {
 			"cv30",
 			"cv05",
 			"zero",
-			"onum",
 		},
-	},
-	{
-		family = "Cascadia Code PL",
-		weight = "Medium",
-		stretch = "Normal",
-		harfbuzz_features = { "ss01", "zero", "cv05", "cv30", "cv31", "cv29" },
 	},
 }
 
@@ -64,7 +63,7 @@ local M = {
 					family = "Cascadia Code PL",
 					weight = "Medium",
 					italic = true,
-					harfbuzz_features = { "zero", "cv05" },
+					harfbuzz_features = { "ss01", "zero", "cv05" },
 				},
 			}),
 		},
@@ -90,10 +89,10 @@ local M = {
 	window_decorations = "NONE",
 	window_background_opacity = 0.95,
 	window_padding = {
-		left = 2,
+		left = 3,
 		right = 1,
-		top = 3,
-		bottom = 3,
+		top = 4,
+		bottom = 0,
 	},
 	animation_fps = 240,
 	default_cursor_style = "SteadyUnderline",
