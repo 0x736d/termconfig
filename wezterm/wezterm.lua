@@ -4,15 +4,14 @@ if not ok then
 	return {}
 end
 
-local catppuccin = require("user.colors.catppuccin").setup({
-	sync = true,
-	-- available flavours: "latte" | "frappe" | "macchiato" | "mocha"
-	sync_flavours = {
-		light = "latte",
-		dark = "mocha",
-	},
-	flavour = "mocha",
-})
+local function select_from_appearance(appr)
+	if appr:find("Dark") then
+		return "Catppuccin Mocha"
+	else
+		return "Catppuccin Latte"
+	end
+end
+
 local keymaps = require("user.keymaps")
 
 local fonts = {
@@ -81,20 +80,20 @@ local M = {
 			}),
 		},
 	},
-	colors = catppuccin,
-	font_size = 12,
+	color_scheme = select_from_appearance(wez.gui.get_appearance()),
+	font_size = 13.8,
 	enable_tab_bar = false,
 	use_fancy_tab_bar = false,
 	use_resize_increments = true,
 	window_decorations = "NONE",
 	window_background_opacity = 0.95,
 	window_padding = {
-		left = 3,
-		right = 1,
-		top = 4,
+		left = 2,
+		right = 0,
+		top = 0,
 		bottom = 0,
 	},
-	animation_fps = 240,
+	animation_fps = 60,
 	default_cursor_style = "SteadyUnderline",
 	term = "wezterm",
 	audible_bell = "Disabled",
