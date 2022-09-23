@@ -16,19 +16,19 @@ local keymaps = require("user.keymaps")
 
 local fonts = {
 	{
-		family = "JetBrains Mono",
+		family = "JetBrainsMono Nerd Font",
 		weight = "Medium",
 		stretch = "Normal",
 		harfbuzz_features = { "zero" },
 	},
 	{
-		family = "Cascadia Code PL",
+		family = "CaskaydiaCove Nerd Font",
 		weight = "Medium",
 		stretch = "Normal",
 		harfbuzz_features = { "zero", "ss01", "ss02", "ss03", "ss04", "ss05", "ss06", "ss07", "ss20", "cv05" },
 	},
 	{
-		family = "Fira Code",
+		family = "FiraCode Nerd Font",
 		weight = "Medium",
 		stretch = "Normal",
 		harfbuzz_features = {
@@ -62,7 +62,7 @@ local M = {
 					family = "Cascadia Code PL",
 					weight = "Medium",
 					italic = true,
-					harfbuzz_features = { "ss01", "zero", "cv05" },
+					harfbuzz_features = { "zero", "cv05" },
 				},
 			}),
 		},
@@ -75,7 +75,7 @@ local M = {
 					family = "Cascadia Code PL",
 					weight = "Bold",
 					italic = true,
-					harfbuzz_features = { "ss01", "zero", "cv05" },
+					harfbuzz_features = { "zero", "cv05" },
 				},
 			}),
 		},
