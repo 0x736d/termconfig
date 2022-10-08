@@ -88,9 +88,9 @@ local M = {
 	window_decorations = "NONE",
 	window_background_opacity = 0.95,
 	window_padding = {
-		left = 2,
+		left = 1,
 		right = 0,
-		top = 0,
+		top = 5,
 		bottom = 0,
 	},
 	animation_fps = 60,
