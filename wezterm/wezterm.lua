@@ -16,12 +16,6 @@ local fonts = {
 		harfbuzz_features = { "zero" },
 	},
 	{
-		family = "CaskaydiaCove Nerd Font",
-		weight = "Medium",
-		stretch = "Normal",
-		harfbuzz_features = { "zero", "ss01", "ss02", "ss03", "ss04", "ss05", "ss06", "ss07", "ss20", "cv05" },
-	},
-	{
 		family = "FiraCode Nerd Font",
 		weight = "Medium",
 		stretch = "Normal",
@@ -53,7 +47,7 @@ local M = {
 			intensity = "Normal",
 			font = wez.font_with_fallback({
 				{
-					family = "Cascadia Code PL",
+					family = "CaskaydiaCove Nerd Font",
 					weight = "Medium",
 					italic = true,
 					harfbuzz_features = { "zero", "cv05" },
@@ -66,7 +60,7 @@ local M = {
 			intensity = "Bold",
 			font = wez.font_with_fallback({
 				{
-					family = "Cascadia Code PL",
+					family = "CaskaydiaCove Nerd Font",
 					weight = "Bold",
 					italic = true,
 					harfbuzz_features = { "zero", "cv05" },
