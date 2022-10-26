@@ -16,14 +16,14 @@ local keymaps = require("user.keymaps")
 
 local fonts = {
 	{
-		family = "JetBrainsMono Nerd Font",
+		family = "JetBrains Mono",
 		weight = "Medium",
 		stretch = "Normal",
 		harfbuzz_features = { "zero" },
 	},
 	{
-		family = "CaskaydiaCove Nerd Font",
-		weight = "Medium",
+		family = "Cascadia Code PL",
+		weight = "Regular",
 		stretch = "Normal",
 		harfbuzz_features = { "zero", "ss01", "ss02", "ss03", "ss04", "ss05", "ss06", "ss07", "ss20", "cv05" },
 	},
@@ -60,7 +60,7 @@ local M = {
 			font = wez.font_with_fallback({
 				{
 					family = "Cascadia Code PL",
-					weight = "Medium",
+					weight = "Regular",
 					italic = true,
 					harfbuzz_features = { "zero", "cv05" },
 				},
