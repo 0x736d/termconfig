@@ -4,9 +4,15 @@ if not ok then
 	return {}
 end
 
-local keymaps = require("user.keymaps")
+local function select_from_appearance(appr)
+	if appr:find("Dark") then
+		return "Catppuccin Mocha"
+	else
+		return "Catppuccin Latte"
+	end
+end
 
-local COLOR_SCHEME = "Catppuccin Mocha"
+local keymaps = require("user.keymaps")
 
 local fonts = {
 	{
@@ -14,6 +20,12 @@ local fonts = {
 		weight = "Medium",
 		stretch = "Normal",
 		harfbuzz_features = { "zero" },
+	},
+	{
+		family = "CaskaydiaCove Nerd Font",
+		weight = "Medium",
+		stretch = "Normal",
+		harfbuzz_features = { "zero", "ss01", "ss02", "ss03", "ss04", "ss05", "ss06", "ss07", "ss20", "cv05" },
 	},
 	{
 		family = "FiraCode Nerd Font",
@@ -47,7 +59,7 @@ local M = {
 			intensity = "Normal",
 			font = wez.font_with_fallback({
 				{
-					family = "CaskaydiaCove Nerd Font",
+					family = "Cascadia Code PL",
 					weight = "Medium",
 					italic = true,
 					harfbuzz_features = { "zero", "cv05" },
@@ -60,7 +72,7 @@ local M = {
 			intensity = "Bold",
 			font = wez.font_with_fallback({
 				{
-					family = "CaskaydiaCove Nerd Font",
+					family = "Cascadia Code PL",
 					weight = "Bold",
 					italic = true,
 					harfbuzz_features = { "zero", "cv05" },
@@ -68,7 +80,7 @@ local M = {
 			}),
 		},
 	},
-	color_scheme = COLOR_SCHEME,
+	color_scheme = select_from_appearance(wez.gui.get_appearance()),
 	font_size = 13.8,
 	enable_tab_bar = false,
 	use_fancy_tab_bar = false,
