@@ -8,7 +8,7 @@ local function select_from_appearance(appr)
 	if appr:find("Dark") then
 		return "Catppuccin Mocha"
 	else
-		return "Catppuccin Latte"
+		return "Catppuccin Mocha"
 	end
 end
 
