@@ -4,15 +4,9 @@ if not ok then
 	return {}
 end
 
-local function select_from_appearance(appr)
-	if appr:find("Dark") then
-		return "Catppuccin Mocha"
-	else
-		return "Catppuccin Latte"
-	end
-end
-
 local keymaps = require("user.keymaps")
+
+local COLOR_SCHEME = "Catppuccin Mocha"
 
 local fonts = {
 	{
@@ -80,7 +74,7 @@ local M = {
 			}),
 		},
 	},
-	color_scheme = select_from_appearance(wez.gui.get_appearance()),
+	color_scheme = COLOR_SCHEME,
 	font_size = 13.8,
 	enable_tab_bar = false,
 	use_fancy_tab_bar = false,
