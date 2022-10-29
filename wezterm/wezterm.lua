@@ -18,35 +18,7 @@ local fonts = {
 	{
 		family = "JetBrains Mono",
 		weight = "Medium",
-		stretch = "Normal",
 		harfbuzz_features = { "zero" },
-	},
-	{
-		family = "Cascadia Code PL",
-		weight = "Regular",
-		stretch = "Normal",
-		harfbuzz_features = { "zero", "ss01", "ss02", "ss03", "ss04", "ss05", "ss06", "ss07", "ss20", "cv05" },
-	},
-	{
-		family = "FiraCode Nerd Font",
-		weight = "Medium",
-		stretch = "Normal",
-		harfbuzz_features = {
-			"ss01",
-			"ss02",
-			"ss03",
-			"ss04",
-			"ss05",
-			"ss06",
-			"ss07",
-			"ss08",
-			"ss09",
-			"cv31",
-			"cv29",
-			"cv30",
-			"cv05",
-			"zero",
-		},
 	},
 }
 
