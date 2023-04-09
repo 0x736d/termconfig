@@ -31,7 +31,7 @@ local M = {
 			intensity = "Normal",
 			font = wez.font_with_fallback({
 				{
-					family = "Cascadia Code PL",
+					family = "Cascadia Code",
 					weight = "Regular",
 					italic = true,
 					harfbuzz_features = { "zero", "cv05" },
@@ -44,7 +44,7 @@ local M = {
 			intensity = "Bold",
 			font = wez.font_with_fallback({
 				{
-					family = "Cascadia Code PL",
+					family = "Cascadia Code",
 					weight = "Bold",
 					italic = true,
 					harfbuzz_features = { "zero", "cv05" },
@@ -58,14 +58,14 @@ local M = {
 	use_fancy_tab_bar = false,
 	use_resize_increments = true,
 	window_decorations = "NONE",
-	window_background_opacity = 0.95,
+	window_background_opacity = 0.98,
 	window_padding = {
 		left = 1,
 		right = 0,
 		top = 5,
 		bottom = 0,
 	},
-	animation_fps = 30,
+	animation_fps = 120,
 	cursor_blink_ease_in = "Constant",
 	cursor_blink_ease_out = "Constant",
 	default_cursor_style = "BlinkingUnderline",
@@ -75,6 +75,7 @@ local M = {
 	check_for_updates = false,
 	leader = keymaps.leader,
 	keys = keymaps.keys,
+	underline_thickness = "0.1cell",
 }
 
 return M
